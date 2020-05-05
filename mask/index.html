@@ -1,0 +1,308 @@
+<html>
+<head>
+	<title>The Mask Company</title>
+	<link rel = "icon" href="img/icon.png"
+        type = "image/x-icon"> 
+	<link rel="stylesheet" type="text/css" href="style.css"/>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<script src="https://unpkg.com/cosha"></script>
+	
+	<script>
+		cosha({
+				className:'slider_image_def',
+				blur:'10px',
+				brightness:'125%',
+				saturation:'110%',
+				x:'2px',
+				y:'6px'
+				});
+	</script>
+	<script>
+		var myIndex = 0;
+		carousel();
+
+		function carousel() {
+		  var i;
+		  var x = document.getElementsByClassName("mySlides");
+		  for (i = 0; i < x.length; i++) {
+			x[i].style.display = "none";  
+		  }
+		  myIndex++;
+		  if (myIndex > x.length) {myIndex = 1}    
+		  x[myIndex-1].style.display = "block";  
+		  setTimeout(carousel, 5000);    
+		}	
+	</script>
+	<script src="https://code.jquery.com/jquery-3.5.0.js" integrity="sha256-r/AaFHrszJtwpe+tHyNi/XCfMxYpbsRg2Uqn0x3s2zc=" crossorigin="anonymous"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+	
+	
+</head>
+<body onload="carousel();">
+<nav class="navbar fixed-top" id="navbar" data-aos="fade-down" 	data-aos-duration="100000" data-aos-delay="100" >
+
+		<a class="navbar-brand" href="#">
+		<img width="150px" height="50px"  src="img/logo_with_name.png"/>
+		</a>
+		<div class="links-wrapper">
+			<ul class="links">
+				<li>
+					<a href="#home" class="active">
+						<span class="f-word" data-hover="Ho">HO</span>
+						<span class="s-word" data-hover="ME">ME</span>
+					</a>
+				</li>
+				<li><a href="#discover">
+						<span class="f-word" data-hover="DISC">DISC</span>
+						<span class="s-word" data-hover="OVER">OVER</span>
+				</a></li>
+				<li><a href="#features">
+						<span class="f-word" data-hover="FEAT">FEAT</span>
+						<span class="s-word" data-hover="URES">URES</span>
+				</a></li>
+				<li><a href="#contact">
+						<span class="f-word" data-hover="CONT">CONT</span>
+						<span class="s-word" data-hover="ACT">ACT</span>
+				</a></li>
+				<li><a href="#"><i class="fa fa-shopping-cart fa-md" aria-hidden="true" title="View Cart" style="cursor:pointer; font-size:25px; color:#fff;" ></i></a></li>
+				<li><a href="#"><i class="fa fa-user-circle fa-lg" title="Account" style="font-size:22px; margin-top:5px; color:white;" aria-hidden="true"></i></a></li>
+			</ul>
+		</div>
+		
+	</nav>
+	<div class="the-blur"></div>
+	
+	<div class="sections">
+		<section id="home">
+		<h1 class="heading1" >HEROES WEAR</h1>	
+		<h1 class="heading2">MASKS</h1>
+		<p class="home_detail" data-aos="fade" 	aos-duration="7000" >LET'S BE ON THE MOVE AGAINST<br>NOVEL <span style="color:#D1A638;">COVID-19 VIRUS</span><br>WITH OUR LATEST TECHNOLOGY MASKS</p>
+		<img class="map" src="img/map_yellow.png"/>
+		</section>
+		<section id="discover">
+		<div class="container">
+			<h2 data-aos="fade-right" 	aos-duration="7000"> Our Products</h2>
+			<div class="row">
+					<div data-aos="fade-up" 	aos-duration="1000ms" class="col-md-3">
+						<div class="product-top">
+							<img class="product-image" src="img/product1.jpg">
+								<div class= "overlay">
+								<button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+								<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+								<button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+								</div>
+								<div class="ribbon-container">
+									<div class="ribbon">
+										<span></span>
+									</div>
+								</div>
+								
+						</div>
+						<div class="product-bottom text-center" data-aos="fade-up" 	aos-duration="7000">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<div class="p-name" >
+									<h3>Urban Air Mask 3.0</h3>
+									<h5><span style="color:#000; opacity:0.3;"><strike>₹1427</strike></span>  ₹999.00</h5>
+							</div>
+							
+							
+						
+						
+						
+						</div>
+					</div>
+					<div class="col-md-3"data-aos="fade-up" aos-duration="1000ms" data-aos-delay="100" >
+						<div class="product-top">
+							<img class="product-image" src="img/product2.jpg">
+								<div class= "overlay">
+								<button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+								<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+								<button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+								</div>
+						</div>
+						<div class="product-bottom text-center"  data-aos="fade-up" 	aos-duration="7000" data-aos-delay="100"> 
+							
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star"></i>
+								<i class="fa fa-star-o"></i>
+								<i class="fa fa-star-o"></i>
+							<div class="p-name" >
+								<h3>N95 Infiltrator</h3>
+								<h5>₹199.00</h5>
+							</div>
+						
+						
+						
+						</div>
+					</div>
+					<div class="col-md-3" data-aos="fade-up" 	aos-duration="7000" data-aos-delay="200">
+						<div class="product-top">
+							<img class="product-image" src="img/product3.jpg">
+								<div class= "overlay">
+								<button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+								<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+								<button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+								</div>
+						</div>
+						<div class="product-bottom text-center" data-aos="fade-up" 	aos-duration="7000" data-aos-delay="200">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-half-o"></i>
+							<i class="fa fa-star-o"></i>
+							<i class="fa fa-star-o"></i>
+							<div class="p-name" >
+								<h3>Denim Ware Mask</h3>
+								<h5>₹299.00</h5>
+							</div>
+						
+						
+						</div>
+					</div>
+					<div class="col-md-3" class="col-md-3"data-aos="fade-up" 	aos-duration="7000" data-aos-delay="300">
+						<div class="product-top">
+							<img class="product-image" src="img/product4.jpg">
+								<div class= "overlay">
+								<button type="button" class="btn btn-secondary" title="Quick Shop"><i class="fa fa-eye" aria-hidden="true"></i></button>
+								<button type="button" class="btn btn-secondary" title="Add to Wishlist"><i class="fa fa-heart" aria-hidden="true"></i></button>
+								<button type="button" class="btn btn-secondary" title="Add to cart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button>
+								</div>
+						</div>
+						<div class="product-bottom text-center" data-aos="fade-up" 	data-aos-duration="7000" data-aos-delay="300">
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star"></i>
+							<i class="fa fa-star-o"></i>
+							<div class="p-name">
+								<h3>Urban Air Filter 2.0</h3>
+								<h5><span style="color:#000; opacity:0.3;"><strike>₹699</strike></span>  ₹599.00</h5>
+							</div>
+						
+						
+						</div>
+					</div>
+			</div>
+			<div class="row">
+				<div class="col-md-12">
+					<div class="more" data-aos="fade-up" 	aos-duration="7000">
+						<p >More Products Coming Soon...</p>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+
+		</section>
+		<section id="features">
+			<div class="row" style="margin-top:100px;" >
+					<div class="col-md-6" data-aos="zoom-in-up" 	data-aos-duration="70000">
+						
+							
+								<div class="img-container">
+									<img class="slider_image_def"  src = "mask_gif.gif">
+								</div>
+								
+					</div>
+					
+					<div class="col-md-6" style="margin-top:20px;">
+						<h3  data-aos="fade-left" 	data-aos-duration="7000" style="color:#D1A638; font-family:'Navbar', bold; letter-spacing:5px; cursor:default;" class="anime-me"> OUR SPECIALITIES</h3>
+						
+						<p data-aos="fade-left" 	data-aos-duration="7000" data-aos-delay="100" style="margin-top:30px; margin-left:20px; color:#fff; font-family:'Arvo'; font-size:18px; width:90%; cursor:default;" > We have been keen in building masks with our latest technological advancements.
+							Our latest infiltration control technology prevents dust and other particles to enter inside.
+							We provide <span style="color:#D1A638;">4 layers </span>of protection in each of the masks. 
+							<br><br>
+							The <span style="color:#D1A638;"> Bio-Infiltrate Controller</span> destroys the virus and all the harmful air spread micro-organisms.
+							This is a patented technology which is proven effective in preventing all the air-borne diseases 
+							and also the novel <span style="color:#D1A638;">COVID-19</span> virus.</p>
+								
+					</div>
+			</div>
+		</section>
+		<section id="contact">
+		
+		<div>
+		
+			<div class="row" style="margin-top:75px;" >
+					<div class="col-md-6" style="margin-top:20px;" data-aos="fade-up" 	data-aos-duration="70000">
+
+						<div class="w3-content w3-display-container" style="max-width:450px; margin-left:118px; margin-top:-10px;">
+						  <img class="mySlides w3-animate-fading" src="img/gallery1.png" style="width:100%; height:300px; border-radius:10px" >
+						  <img class="mySlides w3-animate-fading" src="img/gallery2.png" style="width:100%; height:300px; border-radius:10px" >
+						  <img class="mySlides w3-animate-fading" src="img/gallery3.png" style="width:100%; height:300px; border-radius:10px" >
+						  <img class="mySlides w3-animate-fading" src="img/gallery4.png" style="width:100%; height:300px; border-radius:10px" >
+						
+						</div>
+						
+						<p style="max-width:850px; margin-left:75px; margin-top:18px; color:white; font-family:'Arvo'; font-size:15px; cursor:default;"> <span style="color:#D1A638;">The Mask Company</span> is a startup incubated on 
+						<span style="color:#D1A638;">Government Engineering College Barton Hill.</span>
+						We are the young but bold set of people who are bringing the latest technological innovations for 
+						a social cause. We in The Mask Company combines technological advancements in the air purification industry
+						and implement it within athe size of a daily use mask. This is a ground breaking patent pending technology.
+						</p>
+								
+					</div>	
+				<div class="col-md-6" style="margin-top:10px;" data-aos="fade-left" 	data-aos-duration="7000">		
+					<div class="contact-section">
+					
+						<h2 data-aos="fade-left" 	data-aos-duration="7000" data-aos-delay="200" > Contact Us</h2>
+						<form class="contact-form" > 
+							<input data-aos="fade-left" 	data-aos-duration="7000" data-aos-delay="150" type="text" class="contact-form-text" placeholder="Your Name">
+							<input data-aos="fade-left" 	data-aos-duration="7000" data-aos-delay="200" type="text" class="contact-form-text" placeholder="Your Email">
+							<input data-aos="fade-left" 	data-aos-duration="7000" data-aos-delay="250" type="text" class="contact-form-text" placeholder="Your Phone Number">
+							<textarea  data-aos="fade-left" 	data-aos-duration="7000" data-aos-delay="250"  class="contact-form-text" placeholder="Your Message" rows="6" cols="25"></textarea>
+							<button  onclick=" event.preventDefault(); this.classList.toggle('s-confirm-done'); " class="s-confirm">Send</button>
+							
+						</form>
+					</div>	
+				</div>		
+			</div>	
+			
+			
+		</div>	
+			
+			
+		</section>
+		
+	</div>
+	<footer>
+            <div class="footer">
+                <div class="container">
+					<div class="row">
+				<div class="col-md-12">
+					<div style="margin-left:12px;">
+						<img width="105px" height="85px" src="img/icon.png"></img>
+					</div>
+				</div>
+			</div>
+                    <div class="float-sm-left">
+                        <h5 style="font-family:'Redwing';">
+						2020 © All Rights Reserved.<br>The Mask Company™ </h5>
+                    </div>
+                    <div class="float-sm-right">
+						<div class="social-btns">
+							<ul>
+								<li><a class="btn play" href=""><i class="fa fa-play"></i></a></li>
+								<li><a class="btn youtube" href=""><i class="fa fa-youtube"></i></a></li>
+								<li><a class="btn instagram" href=""><i class="fa fa-instagram"></i></a></li>
+								<li><a class="btn facebook" href=""><i class="fa fa-facebook"></i></a></li>
+							</ul>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>
